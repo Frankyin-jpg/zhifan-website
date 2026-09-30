@@ -44,9 +44,6 @@
       gap: 1rem;
       align-items: start;
     }
-    .gallery.portraits {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
     .gallery img {
       width: 100%;
       height: auto;
@@ -54,16 +51,11 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     }
-    @media (max-width: 900px) {
-      .gallery.portraits {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
     @media (max-width: 560px) {
       section {
         padding: 1rem;
       }
-      .gallery, .gallery.portraits {
+      .gallery {
         grid-template-columns: 1fr;
       }
     }
@@ -82,21 +74,14 @@
 </header>
 
 <main>
-  <section aria-labelledby="performances-heading">
-    <h2 id="performances-heading">At the Piano</h2>
+  <section aria-label="Photo gallery">
     <div class="gallery">
       <img src="G41A5873.jpg" alt="Zhifan Yin performing at a Steinway grand piano" width="4443" height="2976">
       <img src="G41A5883.jpg" alt="Zhifan Yin leaning into a piano performance" width="4317" height="3013">
-      <img src="G41A5887.jpg" alt="Zhifan Yin seated at the grand piano with a hand at his chest" width="4232" height="2998" loading="lazy">
-      <img src="G41A5896.jpg" alt="Close-up of Zhifan Yin at the piano, reflected in the raised lid" width="4915" height="3069" loading="lazy">
-    </div>
-  </section>
-
-  <section aria-labelledby="portraits-heading">
-    <h2 id="portraits-heading">Portraits</h2>
-    <div class="gallery portraits">
       <img src="photo5.jpg" alt="Zhifan Yin wearing a red stole against a brick wall" width="4160" height="6240" loading="lazy">
       <img src="photo6.jpg" alt="Zhifan Yin looking down while wearing a red stole" width="4160" height="6240" loading="lazy">
+      <img src="G41A5887.jpg" alt="Zhifan Yin seated at the grand piano with a hand at his chest" width="4232" height="2998" loading="lazy">
+      <img src="G41A5896.jpg" alt="Close-up of Zhifan Yin at the piano, reflected in the raised lid" width="4915" height="3069" loading="lazy">
       <img src="photo7.jpg" alt="Zhifan Yin in a dark jacket beside a window" width="1280" height="1920" loading="lazy">
       <img src="photo1.jpg" alt="Zhifan Yin outdoors beneath a blue sky" width="4160" height="6240" loading="lazy">
     </div>
